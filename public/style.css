@@ -340,6 +340,9 @@ h2 {
 .footer {
   text-align: center;
   color: grey;
+  position:absolute;
+  bottom:0;
+  width:100%;
 }
 .regi {
   padding-left: 2%;
