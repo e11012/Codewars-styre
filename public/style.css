@@ -1,0 +1,539 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
+body {
+  margin: 0;
+  font-family: "Nunito Sans", sans-serif;
+}
+.logo a {
+  padding: 10px 19px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 54px;
+  letter-spacing: -0.006em;
+  color: #fffaa4;
+  backdrop-filter: blur(4px);
+  text-decoration: none;
+}
+.logo {
+  text-align: right;
+  max-width: 32%;
+  max-height: 32%;
+}
+.nav-links {
+  display: flex;
+  width: 20%;
+  position: absolute;
+  text-align: right;
+  right: 23%;
+  font-size: 20px;
+}
+.nav-links li {
+  list-style: none;
+  justify-content: space-between;
+  padding-left: 4%;
+  padding-right: 2%;
+}
+.nav-links a {
+  padding: 0 19px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  letter-spacing: -0.006em;
+  color: #fffaa4;
+  backdrop-filter: blur(4px);
+  text-decoration: none;
+}
+.nav-links a:hover {
+  font-family: Montserrat;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.hero .left-col h1 {
+  font-size: 300%;
+  width: 100%;
+  padding: 0px 0px;
+  color: #d2e603;
+}
+.hero .left-col p {
+  padding: 0px 0px;
+  color: #fffaa4;
+  width: 100%;
+}
+.hero {
+  padding: 19px 18px;
+  margin-top: 40px;
+  animation: fadeIn 5s;
+  -webkit-animation: fadeIn 5s;
+  -moz-animation: fadeIn 5s;
+  -o-animation: fadeIn 5s;
+  -ms-animation: fadeIn 5s;
+}
+p {
+  font-size: 25px;
+}
+#about {
+  animation: fadeIn 25s;
+  -webkit-animation: fadeIn 5s;
+  -moz-animation: fadeIn 5s;
+  -o-animation: fadeIn 5s;
+  -ms-animation: fadeIn 5s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#home {
+  background: #082032;
+  padding-bottom: 5%;
+}
+#about {
+  padding-top: 3%;
+  background-color: white;
+}
+.about-h1 {
+  font-size: 3rem;
+  color: #082032;
+  color: black;
+}
+
+.about-p {
+  font-size: 1.5rem;
+  padding: 0px;
+  list-style: 1.9em;
+  padding: 0px 20% 0 20%;
+  line-height: 2em;
+}
+.about-1 {
+  text-align: center;
+}
+.about-1 h1 {
+  font-size: 200%;
+}
+nav {
+  display: flex;
+  color: #082032;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: rgb(226, 226, 226);
+  transition: all 0.3s ease;
+  margin: 5px;
+}
+
+@media screen and (max-width: 1024px) {
+  .nav-links {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  nav {
+    justify-content: space-around;
+  }
+  .left-col {
+    font-size: 60%;
+  }
+  .subhead {
+    font-size: 200%;
+    width: 50%;
+  }
+  .team {
+    flex-direction: column;
+  }
+  .hero-img {
+    margin-right: 0;
+    margin-top: 30px;
+    width: 70%;
+    height: 70%;
+  }
+  .regi input {
+    width: 80%;
+  }
+  .regi button {
+    width: 80%;
+    font-size: 80%;
+    padding: 10%;
+  }
+
+  .nav-links {
+    height: 20%;
+    background-color: #082032;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    right: 0;
+    width: 100%;
+    transform: translateX(100%);
+    transform: transform 0.5s ease-in;
+  }
+
+  .nav-links li {
+    opacity: 0;
+  }
+
+  .burger {
+    display: block;
+    padding-top: 3.5%;
+  }
+  .logo a {
+    position: absolute;
+    left: 0;
+  }
+}
+
+.nav-active {
+  transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+@media only screen and (min-width: 1080px) {
+  .hero .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    text-align: left;
+  }
+  .container {
+    display: flex;
+  }
+
+  .hero .left-col {
+    margin: 0;
+  }
+  .hero .left-col h1 {
+    font-size: 2em;
+    width: 100%;
+    padding: 50px 18%;
+  }
+  .hero .left-col p {
+    padding: 0px 18%;
+    width: 70%;
+  }
+  .hero-img {
+    margin-right: 15%;
+    margin-top: 50px;
+    width: 50%;
+    height: 40%;
+  }
+  .hero-cta {
+    display: flex;
+  }
+}
+
+.team {
+  margin-left: 13%;
+  margin-top: 5%;
+  text-align: center;
+  display: flex;
+}
+
+.img-team {
+  border-radius: 50%;
+  width: 10rem;
+  height: 10rem;
+}
+
+.about-h2 {
+  margin-top: 10%;
+  text-align: center;
+}
+
+.team-indiv {
+  padding-left: 6%;
+  padding-right: 6%;
+}
+
+h2 {
+  margin-top: 3%;
+  color: rgb(66, 65, 65);
+  font-weight: lighter;
+}
+
+#sermo {
+  color: white;
+  margin-top: 10%;
+  padding: 5% 10% 10% 10%;
+  background-color: #082032;
+}
+
+.sermo {
+  display: flex;
+}
+
+.sermo-h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.sermo-text {
+  text-align: left;
+  color: #d2e603;
+  width: 60%;
+  padding-left: 10%;
+  font-size: 1.5rem;
+}
+
+.footer {
+  text-align: center;
+  color: grey;
+}
+.regi {
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-bottom: 3%;
+  background-color: #d2e603;
+  min-height: 30vh;
+  width: 40%;
+  justify-content: center;
+  border-radius: 2rem;
+  z-index: 2;
+}
+.regi h1 {
+  text-align: center;
+}
+.regi p {
+  text-align: center;
+}
+.regi form {
+  text-align: center;
+}
+
+.fad {
+  margin: 2%;
+  width: 25%;
+}
+.fab {
+  color: white;
+  padding: 2%;
+  font-size: 2rem;
+}
+
+.fab:hover {
+  color: #d2e603;
+}
+input {
+  border: 1px solid blue;
+  line-height: 2;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+button {
+  padding: 0px 18px;
+  background-color: white;
+  border-radius: 10%;
+  font-weight: normal;
+  font-family: Bebas Neue;
+  font-style: normal;
+  font-size: 20px;
+  border-radius: 10px;
+  color: coral;
+  margin-bottom: 10px;
+}
+button:hover {
+  cursor: pointer;
+  color: green;
+}
+button {
+  color: red;
+  background: #e6e6fa;
+  border: 1px solid blue;
+}
+footer {
+  background-color: #082032;
+}
+.regi #sermo {
+  background: #d2e603;
+}
+
+button:hover {
+  border: 2px solid red;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+button {
+  background-color: coral;
+  border: 2px solid red;
+  border-radius: 4px;
+  font-weight: normal;
+  font-family: "KoHo", sans-serif;
+  font-style: normal;
+  font-size: 25px;
+  height: 40px;
+  box-shadow: 0px 4px 45px rgba(0, 0, 0, 0.25);
+  color: white;
+}
+.sermo-inp {
+  padding: 10px 18px;
+}
+
+#root button {
+  margin: 1%;
+}
+.app {
+  display: flex;
+  flex-direction: row;
+}
+
+.App {
+  display: flex;
+}
+
+.todo {
+  width: 30%;
+  padding: 10px;
+}
+
+.competitions {
+  width: 70%;
+  padding: 10px;
+}
+
+.competition-name {
+  font-size: 20px;
+}
+
+.b {
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.keppa-heading {
+  font-size: 30px;
+  color: black;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.keppa {
+  font-size: 40px;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+}
+
+.form-element {
+  margin: 5px;
+}
+
+.cards {
+  font-family: "Nunito Sans", sans-serif;
+  text-align: center;
+  margin: 20px;
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 24px;
+  box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.25);
+  width: 343px;
+  text-align: center;
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+.cards h1 {
+  font-family: "Nunito Sans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 200%;
+  line-height: 100.5%;
+  color: #000000;
+  margin: 20px;
+  text-align: center;
+}
+
+.cards h3 {
+  font-family: "Nunito Sans", sans-serif;
+  text-align: center;
+}
+
+.course-btn1 {
+  margin-top: 60%;
+}
+
+.course-btn2 {
+  margin-top: 55%;
+}
+
+.course-btn3 {
+  margin-top: 30%;
+}
+
+nav {
+  background-color: #082032;
+  height: 80px;
+}
